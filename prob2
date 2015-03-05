@@ -1,0 +1,25 @@
+from math import *
+from pylab import *
+from numpy import *
+
+for q in range(0,101,5):
+    a=e**(-q)
+    print'for x =',q,"  ",'e^-x is: ',a
+    
+
+
+
+for p in range(0,101,5):
+    c=1/(exp(p))
+    print'for x =',p,"  ",'e^-x is: ',c
+
+expect=a
+j=q   
+y1=exp(-x)
+y2=1/(exp(x))
+x=linspace(0,100,1000)
+plot(x,y1)
+plot(x,y2)
+xlim(0,30)
+
+show()
