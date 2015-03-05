@@ -1,0 +1,7 @@
+from numpy import *
+from math import *
+from pylab import *
+value = loadtxt("stm.txt",float)
+density = imshow(value,origin="lower")
+gray()
+show()
