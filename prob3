@@ -1,0 +1,18 @@
+from math import *
+
+a=float(input("Enter the first term of the quadratic equation: "))
+b=float(input("Enter the second term of the quadratic equation: "))
+c=float(input("Enter the third term of the quadratic equation: "))
+
+x1=(-b + sqrt(b**2.0 - 4.0*a*c))/(2.0*a)
+x2=(-b - sqrt(b**2.0 - 4.0*a*c))/(2.0*a)
+
+print'the two solutions to the equation is: ',x1,'and',x2
+
+x3=(2*c)/(-b + sqrt(b**2.0 - 4.0*a*c))
+x4=(2*c)/(-b - sqrt(b**2.0 - 4.0*a*c))
+
+print'the two solutions to the equation is: ',x3,'and',x4
+
+#The two solutions to the quadraction equation is -1 x 10^6 and -9.99989 x 10^-7
+#When the equation gets flipped, the soultions becomes flipped also by where it is placed in the x part of the solution
